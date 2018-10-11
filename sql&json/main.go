@@ -33,6 +33,11 @@ func selectData(db *sql.DB) {
 		log.Printf("get data, id: %d, name: %s, age: %d", id, name, age)
 	}
 
+	err = rows.Err()
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	data := User{id, name, age}
 	j, err := json.Marshal(data)
 	if err != nil {
@@ -41,10 +46,6 @@ func selectData(db *sql.DB) {
 	}
 	fmt.Println(string(j))
 
-	err = rows.Err()
-	if err != nil {
-		log.Fatal(err)
-	}
 }
 
 func main() {

@@ -1,9 +1,0 @@
-C:\Users\dell\Source\Repos\note\note\bin\Release\note.exe.config
-C:\Users\dell\Source\Repos\note\note\bin\Release\note.exe
-C:\Users\dell\Source\Repos\note\note\bin\Release\note.pdb
-C:\Users\dell\Source\Repos\note\note\obj\Release\note.Form1.resources
-C:\Users\dell\Source\Repos\note\note\obj\Release\note.Properties.Resources.resources
-C:\Users\dell\Source\Repos\note\note\obj\Release\note.csproj.GenerateResource.cache
-C:\Users\dell\Source\Repos\note\note\obj\Release\note.csproj.CoreCompileInputs.cache
-C:\Users\dell\Source\Repos\note\note\obj\Release\note.exe
-C:\Users\dell\Source\Repos\note\note\obj\Release\note.pdb

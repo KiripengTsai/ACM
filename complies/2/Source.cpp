@@ -9,8 +9,8 @@
 using namespace std;
 
 vector<vector<string>>          grammer;
-map<char, set<char>>     firstList;
-map<char, set<char>>     followList;
+map<char, set<char>>            firstList;
+map<char, set<char>>            followList;
 
 void processState(string str) {
 	vector<string> temp;
@@ -171,3 +171,58 @@ int main() {
 
      return 0;
 }
+
+/*
+S->prprogram
+A->statement_list
+B->statement
+C->expression_stmt
+D->if_stmt
+E->while_stmt
+F->expression
+G->var
+H->simple-expression
+J->additive-expression
+K->relop
+L->addop
+M->term
+N->mulop
+P->factor
+
+*/
+
+/*
+a->main()
+b->{
+c->}
+d->;
+e->if
+f->(
+g->)
+h->else
+j->while
+k->=
+m->ID
+n->[
+o->]
+p-><=|<|>|>=|==|!=
+r->+|-
+s->*|/
+t->NUM
+*/
+
+0.  S->abAc
+1.  A->AB|$
+2.  B->C|D|E
+3.  C->Fd|d
+4.  D->efFgB|efFgBhB
+5.  E->jfFg
+6.  F->GkF|H
+7.  G->m|mnFo
+8.  H->JKJ|J
+9.  K->p
+10. J->JLM|M
+11. L->r
+12. M->MNP|P
+13. N->s
+14. P->fFg|G|t
